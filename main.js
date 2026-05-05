@@ -74,6 +74,16 @@ document.querySelectorAll('.card').forEach((card) => {
   });
 });
 
+// Screenshot expand buttons (Google Ads section)
+document.querySelectorAll('.screenshot-expand, .screenshot-frame__img').forEach((el) => {
+  el.addEventListener('click', () => {
+    const btn = el.closest('.gads__screenshot').querySelector('.screenshot-expand');
+    const src = btn.dataset.img;
+    const cap = btn.dataset.caption;
+    openLightbox(src, cap);
+  });
+});
+
 lbClose.addEventListener('click', closeLightbox);
 
 lightbox.addEventListener('click', (e) => {

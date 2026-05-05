@@ -493,8 +493,9 @@ body {
 
 .partner__badges {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
+  max-width: 680px;
 }
 
 .partner__badge {
